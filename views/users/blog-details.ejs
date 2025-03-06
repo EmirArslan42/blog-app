@@ -9,7 +9,7 @@
 
     <%- include('../partials/nav.ejs') %>
 
-        <div class="container mt-3">
+        <div class="container mt-3 mb-3">
             <div class="card">
                 <div class="card-body">
                     <div class="row">
@@ -21,7 +21,14 @@
                                 <%=blog.baslik %>
                             </h1>
                             <p>
-                                <%= blog.aciklama %>
+                                <%= blog.altbaslik %>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                <%- blog.aciklama  %>
                             </p>
                         </div>
                     </div>
